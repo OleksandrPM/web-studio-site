@@ -2,7 +2,7 @@
   "name": "web-studio-site",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://OleksandrPM.github.io/web-studio-site",
+  "homepage": "https://oleksandrpm.github.io/web-studio-site/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /web-studio-site/"
