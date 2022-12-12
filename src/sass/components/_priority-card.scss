@@ -1,0 +1,29 @@
+.priority-card__decoration {
+  display: flex;
+  margin-bottom: 30px;
+  height: 120px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.priority-card__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+    text-align: center;
+  }
+}
+
+.priority-card__article {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

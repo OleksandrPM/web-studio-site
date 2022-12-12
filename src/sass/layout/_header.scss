@@ -1,0 +1,19 @@
+.pages-head {
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__head-nav {
+    margin-right: auto;
+  }
+
+  &__contacts {
+    // Phone styles
+    @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+      display: none;
+    }
+  }
+}

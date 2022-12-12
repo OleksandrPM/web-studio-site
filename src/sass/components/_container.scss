@@ -1,0 +1,22 @@
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: 100%;
+
+  // Phone styles
+  @media screen and (min-width: map-get($breakpoints, 'phone')) {
+    width: map-get($breakpoints, 'phone');
+  }
+
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    width: map-get($breakpoints, 'tablet');
+  }
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    width: map-get($breakpoints, 'desktop');
+  }
+}

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Web Studio</title>
+    <title>Web Studio - Portfolio</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,21 +21,15 @@
   </head>
 
   <body class="page">
-    <include src="./partials/header.html"></include>
+    <include src="./partials/portfolio/header.html"></include>
 
     <main>
-      <include src="./partials/hero.html"></include>
-      <include src="./partials/priorities.html"></include>
-      <include src="./partials/work.html"></include>
-      <include src="./partials/team.html"></include>
-      <include src="./partials/clientage.html"></include>
+      <include src="./partials/portfolio/portfolio.html"></include>
     </main>
 
     <include src="./partials/footer.html"></include>
 
-    <include src="./partials/mobile-menu.html"></include>
-
-    <include src="./partials/modal.html"></include>
+    <include src="./partials/portfolio/mobile-menu.html"></include>
 
     <!-- Scripts -->
     <!-- Mobile menu scripts -->
@@ -46,8 +40,5 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
-
-    <!-- Modal window script -->
-    <script src="./js/modal.js"></script>
   </body>
 </html>

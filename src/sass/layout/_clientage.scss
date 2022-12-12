@@ -1,0 +1,52 @@
+.clientage__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clientage__item {
+  display: flex;
+  height: 92px;
+
+  // Phone styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+    width: calc((100% - (30px * 1)) / 2);
+  }
+
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    width: calc((100% - (30px * 2)) / 3);
+  }
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    width: calc((100% - (30px * 5)) / 6);
+  }
+
+  .clientage__link {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    color: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    transition-duration: map-get($transitions, 'normal-transition-duration');
+    transition-timing-function: map-get(
+      $transitions,
+      'normal-transition-timing-function'
+    );
+    transition-property: color, border-color;
+
+    &:hover,
+    &:focus {
+      color: map-get($colors, 'brand-color');
+      border-color: map-get($colors, 'brand-color');
+    }
+  }
+}
+
+.clientage__icon {
+  fill: currentColor;
+}

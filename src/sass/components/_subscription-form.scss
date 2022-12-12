@@ -1,0 +1,87 @@
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    flex-direction: row;
+  }
+}
+
+.subscription-form__input {
+  margin-bottom: 20px;
+  padding: 15px 16px;
+
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: map-get($colors, 'clear-white-color');
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  // Phone styles
+  @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  // Tablet styles
+  @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+    width: 450px;
+  }
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.subscription-form__button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: map-get($colors, 'clear-white-color');
+  background-color: map-get($colors, 'brand-color');
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  transition-duration: map-get($transitions, 'normal-transition-duration');
+  transition-timing-function: map-get(
+    $transitions,
+    'normal-transition-timing-function'
+  );
+  transition-property: background-color;
+
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, 'active-buttons-color');
+  }
+}
+
+.subscription-form__span {
+  margin-right: 10px;
+}
+
+.subscription-form__icon {
+  fill: currentColor;
+}

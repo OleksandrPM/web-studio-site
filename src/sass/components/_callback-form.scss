@@ -1,0 +1,53 @@
+.callback__label {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+
+  cursor: pointer;
+
+  &--lower {
+    margin-bottom: 20px;
+  }
+}
+
+.callback__checkbox {
+  margin-bottom: 31px;
+
+  // Desktop styles
+  @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+    margin-bottom: 30px;
+  }
+}
+
+.callback__button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: map-get($colors, 'clear-white-color');
+  background-color: map-get($colors, 'brand-color');
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  transition-duration: map-get($transitions, 'normal-transition-duration');
+  transition-timing-function: map-get(
+    $transitions,
+    'normal-transition-timing-function'
+  );
+  transition-property: background-color;
+
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, 'active-buttons-color');
+  }
+}

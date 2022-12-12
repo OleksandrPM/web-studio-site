@@ -1,0 +1,80 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+
+  color: #afb1b8;
+
+  border-radius: 50%;
+
+  transition-duration: map-get($transitions, 'normal-transition-duration');
+  transition-timing-function: map-get(
+    $transitions,
+    'normal-transition-timing-function'
+  );
+  transition-property: color, background-color;
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'clear-white-color');
+    background-color: map-get($colors, 'brand-color');
+  }
+
+  &--inverse {
+    color: map-get($colors, 'clear-white-color');
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
+.menu-container__socials {
+  justify-content: start;
+
+  @media screen and (max-width: calc(map-get($breakpoints, 'phone') - 0.02px)) {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+.menu-container__socials .socials__item {
+  @media screen and (min-width: map-get($breakpoints, 'phone')) {
+    &:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+
+.menu-container__socials .socials__link {
+  display: inline;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: map-get($colors, 'brand-color');
+
+  transition-duration: map-get($transitions, 'normal-transition-duration');
+  transition-timing-function: map-get(
+    $transitions,
+    'normal-transition-timing-function'
+  );
+  transition-property: color;
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, 'active-buttons-color');
+  }
+}

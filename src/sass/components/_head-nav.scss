@@ -1,0 +1,23 @@
+.head-nav {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    // Tablet styles
+    @media screen and (min-width: map-get($breakpoints, 'tablet')) {
+      margin-right: 88px;
+    }
+
+    // Desktop styles
+    @media screen and (min-width: map-get($breakpoints, 'desktop')) {
+      margin-right: 93px;
+    }
+  }
+
+  &__site-nav {
+    // Phone styles
+    @media screen and (max-width: calc(map-get($breakpoints, 'tablet') - 0.02px)) {
+      display: none;
+    }
+  }
+}

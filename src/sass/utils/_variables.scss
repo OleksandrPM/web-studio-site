@@ -1,0 +1,26 @@
+$breakpoints: (
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1200px,
+);
+
+$fonts: (
+  'main-font-family': 'Roboto',
+  'main-font-style': normal,
+);
+
+$colors: (
+  'main-text-color': #757575,
+  'clear-white-color': #ffffff,
+  'titles-color': #212121,
+  'brand-color': #2196f3,
+  'logo-color': #000000,
+  'page-background-color': #f5f5f5,
+  'hero-background-color': #c4c4c4,
+  'active-buttons-color': #188ce8,
+);
+
+$transitions: (
+  'normal-transition-duration': 250ms,
+  'normal-transition-timing-function': cubic-bezier(0.4, 0, 0.2, 1),
+);
